@@ -6,9 +6,9 @@ int main()
      scanf("%s",s);
     for(int i=0;i<strlen(s);i++)
     {
-       if(s[i]>='A' && s[i]<='Z')
+       if(s[i]>='a' && s[i]<='z')
        {
-        c[i]=s[i]+32;
+        c[i]=s[i]-32;
        }
        else 
        {

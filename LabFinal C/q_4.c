@@ -1,24 +1,13 @@
-#include <stdio.h>
-
-int main() {
-    int larg1, larg2, larg3;
-    scanf("%d%d%d", &larg1,&larg2,&larg3);
-    if (larg2 > larg1) {
-        int temp = larg1;
-        larg1 = larg2;
-        larg2 = temp;
-    }
-    if (larg3 > larg1) {
-        int temp = larg1;
-        larg1 = larg3;
-        larg3 = temp;
-    }
-    if (larg3 > larg2) {
-        int temp = larg2;
-        larg2 = larg3;
-        larg3 = temp;
-    }
-    printf(" %d, %d, %d\n", larg1, larg2, larg3);
-
+#include<stdio.h>
+int main()
+{
+    char s[20];
+    scanf("%s",s);
+    int len=0;
+    for(int i=0;s[i]!='\0';i++)
+    {
+        len++;
+    } 
+    printf("%d",len);
     return 0;
 }
