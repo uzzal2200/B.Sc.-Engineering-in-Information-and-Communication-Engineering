@@ -1,0 +1,28 @@
+
+clear all;
+clc;
+fm = 10;
+fc = 100;
+mp=25;
+t=0:0.0001:0.50;
+m=sin(2*pi*fm*t);
+subplot(3,1,1);
+plot(t,m);
+xlabel('Time');
+ylabel('Amplitude');
+title('Message Signal');
+grid on;
+c=sin(2*pi*fc*t);
+subplot(3,1,2);
+plot(t,c);
+xlabel('Time');
+ylabel('Amplitude');
+title('Carrier Signal');
+grid on;
+s=sin(2*pi*fc*t + m.*mp);
+subplot(3,1,3);
+plot(t,s);
+xlabel('Time');
+ylabel('Amplitude');
+title('Phase Modulated Signal');
+grid on;
