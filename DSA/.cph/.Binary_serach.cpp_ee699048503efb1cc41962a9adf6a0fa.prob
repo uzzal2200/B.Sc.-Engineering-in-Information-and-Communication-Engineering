@@ -1,0 +1,1 @@
+{"name":"Local: Binary_serach","url":"g:\\All Lab\\DSA\\Binary_serach.cpp","tests":[{"id":1731212384981,"input":"13\n11 22 30 33 40 44 55 60 66 77 80 88 99\n40","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"g:\\All Lab\\DSA\\Binary_serach.cpp","group":"local","local":true}

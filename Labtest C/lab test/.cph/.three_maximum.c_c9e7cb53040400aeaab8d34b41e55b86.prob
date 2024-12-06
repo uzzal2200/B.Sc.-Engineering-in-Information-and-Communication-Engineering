@@ -1,0 +1,1 @@
+{"name":"Local: three_maximum","url":"d:\\batch -3\\lab question\\lab test\\three_maximum.c","tests":[{"id":1702113903889,"input":"34 78 9086","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\batch -3\\lab question\\lab test\\three_maximum.c","group":"local","local":true}

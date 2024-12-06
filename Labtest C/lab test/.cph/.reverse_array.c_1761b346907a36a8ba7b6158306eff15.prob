@@ -1,0 +1,1 @@
+{"name":"Local: reverse_array","url":"d:\\batch -3\\lab question\\lab test\\reverse_array.c","tests":[{"id":1700311273675,"input":"5\n2 3 5 8 9","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\batch -3\\lab question\\lab test\\reverse_array.c","group":"local","local":true}

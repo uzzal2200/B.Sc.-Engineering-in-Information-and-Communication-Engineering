@@ -1,0 +1,1 @@
+{"name":"Local: file","url":"d:\\batch -3\\lab question\\lab test\\file.c","tests":[{"id":1702092798658,"input":"uzzal\n22","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\batch -3\\lab question\\lab test\\file.c","group":"local","local":true}

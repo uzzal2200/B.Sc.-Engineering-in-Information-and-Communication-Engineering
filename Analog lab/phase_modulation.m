@@ -1,0 +1,31 @@
+clc;
+clear all;
+close all;
+t=0:0.001:1;
+Am=1;
+fm=2;
+Ac=1;
+fc=50;
+kp=20;
+Wm=2*pi*fm;
+m=Am*cos(Wm*t);
+subplot(3,1,1);
+plot(t,m);
+title('Message Signal');
+xlabel('Time');
+ylabel('Amplitude');
+Wc=2*pi*fc;
+c=Ac*cos(Wc*t);
+subplot(3,1,2);
+plot(t,c);
+title('Carrier Signal');
+xlabel('Time');
+ylabel('Amplitude');
+s_pm=Ac*cos(Wc*t+m.*kp);
+subplot(3,1,3);
+plot(t,s_pm);
+title('Phase Modulated Signal');
+xlabel('Time');
+ylabel('Amplitude');
+
+

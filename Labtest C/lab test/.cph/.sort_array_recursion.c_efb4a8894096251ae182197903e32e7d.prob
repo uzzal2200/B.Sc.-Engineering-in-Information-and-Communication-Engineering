@@ -1,0 +1,1 @@
+{"name":"Local: sort_array_recursion","url":"d:\\batch -3\\lab question\\lab test\\sort_array_recursion.c","tests":[{"id":1702139870693,"input":"5\n3 6 59 2 7","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\batch -3\\lab question\\lab test\\sort_array_recursion.c","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: count_string","url":"d:\\batch -3\\lab question\\lab test\\count_string.c","tests":[{"id":1704822984012,"input":"uzzal","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\batch -3\\lab question\\lab test\\count_string.c","group":"local","local":true}

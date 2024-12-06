@@ -1,0 +1,1 @@
+{"name":"Local: ncr_factorial","url":"d:\\batch -3\\lab question\\lab test\\ncr_factorial.c","tests":[{"id":1700337395334,"input":"9 3","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\batch -3\\lab question\\lab test\\ncr_factorial.c","group":"local","local":true}

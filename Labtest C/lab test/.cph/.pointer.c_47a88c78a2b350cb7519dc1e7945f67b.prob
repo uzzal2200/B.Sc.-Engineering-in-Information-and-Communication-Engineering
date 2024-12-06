@@ -1,0 +1,1 @@
+{"name":"Local: pointer","url":"d:\\batch -3\\lab question\\lab test\\pointer.c","tests":[{"id":1700368466404,"input":"5\n1 2 3 4 5","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\batch -3\\lab question\\lab test\\pointer.c","group":"local","local":true}
