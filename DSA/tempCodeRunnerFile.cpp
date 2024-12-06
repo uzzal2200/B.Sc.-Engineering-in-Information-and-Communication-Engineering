@@ -1,1 +1,1 @@
-    cout << "Enter the elemnt you want to find: ";
+ regex regexPattern(pattern);
