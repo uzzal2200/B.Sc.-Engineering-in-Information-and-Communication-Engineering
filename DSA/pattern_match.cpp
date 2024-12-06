@@ -13,22 +13,22 @@ int main() {
     int patLength = pattern.length();
     
     // Flag to check if a match is found
-    int result = 0;
+    bool result = false;
 
     // Loop through the text and check if the pattern matches at each position
-    for (int i = 0; i <= text.length() - patLength; ++i) {
+    for (int i = 0; i <= text.length() - patLength; i++) {
         // Extract the substring from the text starting at index i and of length pattern length
         string substr = text.substr(i, patLength);
         
         // Compare the substring with the pattern
         if (substr == pattern) {
             cout << "Pattern found at index " << i << endl;
-            result = 1;
+            result = true;
         }
     }
 
     // If no match is found, print this message
-    if ( result == 0) {
+    if ( result == false) {
         cout << "Pattern not found in the text!" << endl;
     }
 
