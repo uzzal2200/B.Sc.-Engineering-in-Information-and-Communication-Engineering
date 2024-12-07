@@ -46,18 +46,25 @@ public:
     }
     void display()
     {
-        queue<int> temp = v;
-        cout << "Queue elements: ";
-        while (!temp.empty())
+        if (v.empty())
         {
-            cout << temp.front() << " ";
-            temp.pop();
+            cout << " Queue is empty" << endl;
         }
-        cout << endl;
+        else
+        {
+            queue<int> temp = v;
+            cout << "Queue elements: ";
+            while (!temp.empty())
+            {
+                cout << temp.front() << " ";
+                temp.pop();
+            }
+            cout << endl;
+        }
     }
     void Size()
     {
-        cout<<"size : "<<v.size()<<endl;
+        cout << "size : " << v.size() << endl;
     }
 };
 int main()
@@ -79,8 +86,6 @@ int main()
     q.peek();
     q.deleteElement();
     q.display();
-    
 
-    
     return 0;
 }
