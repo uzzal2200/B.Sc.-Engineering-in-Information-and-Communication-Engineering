@@ -9,7 +9,7 @@
 # # Print the result
 # print(result)
 
-# Step 1: Create the observed data matrix
+# # Step 1: Create the observed data matrix
 observed <- matrix(c(100, 70, 30,
                      140, 60, 20), 
                    nrow = 2, byrow = TRUE)
