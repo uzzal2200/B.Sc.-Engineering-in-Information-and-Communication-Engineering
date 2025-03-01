@@ -1,113 +1,73 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// Class definition for custom queue
 class myqueue
 {
-public:
-    queue<int> v;
+    queue<int> q;
 
-    // Function to add an element to the queue
-    void enqueue(int val)
-    {
-        v.push(val);
+public:
+    void enqueue(int val) {
+        q.push(val);
         cout << "Enqueued: " << val << endl;
     }
 
-    // Function to remove the front element from the queue
-    void dequeue()
-    {
-        if (!v.empty())
-        {
-            cout << "Dequeued: " << v.front() << endl;
-            v.pop();
-        }
-        else
-        {
+    void dequeue() {
+        if (!q.empty()) {
+            cout << "Dequeued: " << q.front() << endl;
+            q.pop();
+        } else {
             cout << "Queue is empty. Cannot dequeue" << endl;
         }
     }
 
-    // Function to get the front element without removing it
-    void peek()
-    {
-        if (!v.empty())
-        {
-            cout << "Front item: " << v.front() << endl;
-        }
-        else
-        {
+    void peek() {
+        if (!q.empty()) {
+            cout << "Front item: " << q.front() << endl;
+        } else {
             cout << "Queue is empty. No front item to peek" << endl;
         }
     }
 
-    // Function to delete the front element (Similar to dequeue)
-    void deleteElement()
-    {
-        if (!v.empty())
-        {
-            cout << "Deleted: " << v.front() << endl;
-            v.pop();
-        }
-        else
-        {
-            cout << "Queue is empty. Cannot delete" << endl;
-        }
-    }
-
-    // Function to display all elements in the queue
-    void display()
-    {
-        if (v.empty())
-        {
+    void display() {
+        if (q.empty()) {
             cout << "Queue is empty" << endl;
+            return;
         }
-        else // If queue has elements
-        {
-            queue<int> temp = v;
-            cout << "Queue elements: ";
-
-            while (!temp.empty())
-            {
-                cout << temp.front() << " ";
-                temp.pop();
-            }
-            cout << endl;
+        cout << "Queue elements: ";
+        queue<int> temp = q;
+        while (!temp.empty()) {
+            cout << temp.front() << " ";
+            temp.pop();
         }
+        cout << endl;
     }
 
-    // Function to display the size of the queue
-    void Size()
-    {
-        cout << "Size: " << v.size() << endl;
+    void Size() {
+        cout << "Size: " << q.size() << endl;
     }
 };
 
-// Main function
 int main()
 {
     myqueue q;
-    int n;
-
+    int n, x;
 
     cout << "Enter number of elements to enqueue: ";
     cin >> n;
 
-    // Loop to enqueue elements
-    for (int i = 0; i < n; i++)
-    {
-        int x;
-        cout << "Enter element " << i + 1 << ": ";
+    for (int i = 0; i < n; i++) {
+        // cout << "Enter element " << i + 1 << ": ";
         cin >> x;
         q.enqueue(x);
-
-        q.display();
     }
+
+    q.display();
     q.Size();
+    q.peek();
     q.dequeue();
     q.peek();
-    q.deleteElement();
     q.display();
+    q.Size();
 
     return 0;
 }

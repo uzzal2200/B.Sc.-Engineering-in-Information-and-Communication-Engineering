@@ -58,7 +58,29 @@ int main()
 
 
 
-  
+    cout<<"DP Table "<<endl;
+    for (int i = 0; i <= n; i++)
+    {
+        for (int j = 0; j <= cap; j++)
+        {
+            cout<< setw(4)<<dp[i][j]<<" ";
+        }
+        cout<<endl;
+    }
+
+
+    // Now, we need to find the items that were included
+    cout << "Items included to achieve maximum profit:" << endl;
+    int j = cap;
+    for (int i = n; i > 0; i--)
+    {
+        // If the item was included
+        if (dp[i][j] != dp[i - 1][j])
+        {
+            cout << "Item " << i << " (Profit: " << profits[i - 1] << ", Weight: " << weight[i - 1] << ")" << endl;
+            j = j - weight[i - 1]; // Reduce the remaining capacity
+        }
+    }
 
     return 0;
 }

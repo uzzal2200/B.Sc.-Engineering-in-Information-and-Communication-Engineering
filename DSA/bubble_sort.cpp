@@ -1,57 +1,53 @@
 #include <bits/stdc++.h>
 using namespace std;
-
 int main()
 {
-    int n;
-    cout << "Enter the size of Array: ";
-    cin >> n;
-    int a[n];
-
-    cout << "Enter elements of the array: ";
-    for (int i = 0; i < n; i++)
+  int n;
+  cout << "Enter the size of array : ";
+  cin >> n;
+  int a[n];
+  cout << " Enter the elements of array : ";
+  for (int i = 0; i < n; i++)
+  {
+    cin >> a[i];
+  }
+  int cnt1 = 0;
+  int cnt2 = 0;
+  for (int i = 0; i < n - 1; i++)
+  {
+    bool flag = false;
+    cout << "pass = " << i + 1 << endl;
+    for (int j = 0; j < n - i - 1; j++)
     {
-        cin >> a[i];
-    }
+      cout << "Compare " << a[j] << " and " << a[j + 1] << endl;
+      cnt1++;
+      if (a[j] >= a[j + 1])
+      {
+        // int temp = a[j];
+        // a[j] = a[j + 1];
+        // a[j + 1] = temp;
+        swap(a[j], a[j+1]);
+        cnt2++;
+        cout << "swap " << a[j + 1] << " and " << a[j] << " : ";
+      }
 
-    cout << "\nSorting process:\n";
-
-    // Bubble Sort with iteration printing
-    for (int i = 0; i < n - 1; i++)
-    {
-        cout << "Iteration " << i + 1 << ": ";
-        bool swapped = false; // Optimization: Track if swap occurs
-
-        for (int j = 0; j < n - i - 1; j++)
-        {
-            if (a[j] > a[j + 1])
-            {
-                swap(a[j], a[j + 1]);
-                swapped = true;
-            }
-        }
-
-        // Print the array after each iteration
-        for (int k = 0; k < n; k++)
-        {
-            cout << a[k] << " ";
-        }
-        cout << endl;
-
-        // If no swaps were made, the array is already sorted
-        if (!swapped)
-        {
-            cout << "Array is already sorted. Stopping early.\n";
-            break;
-        }
-    }
-
-    cout << "\nSorted Array: ";
-    for (int i = 0; i < n; i++)
-    {
+      for (int i = 0; i < n; i++)
+      {
         cout << a[i] << " ";
+      }
+      cout << endl;
+      flag = true;
     }
     cout << endl;
+  }
+  cout << " Sorted array " << endl;
+  for (int i = 0; i < n; i++)
+  {
+    cout << a[i] << " ";
+  }
+  cout << endl;
+  cout << "Total comparision " << cnt1 << endl;
+  cout << "Total Interchange " << cnt2 << endl;
 
-    return 0;
+  return 0;
 }
