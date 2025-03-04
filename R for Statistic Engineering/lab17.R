@@ -1,4 +1,4 @@
- Lab 17: Perform Fisher's Exact Test on 2×2 Contingency Tables
+#  Lab 17: Perform Fisher's Exact Test on 2×2 Contingency Tables
  # Create a 2x2 contingency table
  data <- matrix(c(10, 5, 2, 8), nrow = 2, byrow = TRUE)
  rownames(data) <- c("Group A", "Group B")

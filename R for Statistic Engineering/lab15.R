@@ -1,4 +1,4 @@
- Lab 15: Compare the Power of Different Tests for the Same Hypothesis
+#  Lab 15: Compare the Power of Different Tests for the Same Hypothesis
  # Parameters
  mu0 <- 5  # Null hypothesis mean
  mu1 <- 6  # Alternative hypothesis mean
@@ -38,4 +38,4 @@
  power_t <- sapply(sample_sizes, function(n) {
 sum(replicate(N_sim, t.test(rnorm(n, mean = mu1, sd = sigma), mu = mu0, alternative = "greater")$p.value < alpha)) / N_sim
  })
- plot(sample_sizes, power_t, type = "b", col = "blue", main = "Power vs. Sample Size", xlab = "Sample Size", 
+ plot(sample_sizes, power_t, type = "b", col = "blue", main = "Power vs. Sample Size", xlab = "Sample Size",

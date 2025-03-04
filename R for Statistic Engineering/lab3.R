@@ -1,67 +1,110 @@
-# Lab 3: Comparison of t-Distribution with Normal Distribution for Small Sample Sizes
+# set.seed(123)  # Set seed for reproducibility
 
-# Parameters
-n <- 10
-N_sim <- 1000
-set.seed(123)
+n <- 10  # Sample size for the t-distribution
+N_sim <- 1000  # Number of simulations
 
-# Generate data
-t_data <- rt(N_sim, df = n-1)
-normal_data <- rnorm(N_sim)
+# Generate random samples from t-distribution and normal distribution
+t_data <- rt(N_sim, df = n - 1)  # t-distribution data
+normal_data <- rnorm(N_sim)  # Normal distribution data
 
-# Graphical Output
-par(mfrow = c(2, 2))
+par(mfrow = c(2, 2))  # Arrange plots in a 2x2 grid
 
 # Histogram of t-distribution
 hist(t_data, probability = TRUE, col = "lightblue", main = "t-Distribution", border = "white")
-curve(dt(x, df = n-1), add = TRUE, col = "red", lwd = 2)
+curve(dt(x, df = n - 1), add = TRUE, col = "red", lwd = 2)  # Overlay theoretical t-distribution
 
 # Histogram of normal distribution
 hist(normal_data, probability = TRUE, col = "lightgreen", main = "Normal Distribution", border = "white")
-curve(dnorm(x), add = TRUE, col = "blue", lwd = 2)
+curve(dnorm(x), add = TRUE, col = "blue", lwd = 2)  # Overlay theoretical normal distribution
 
-# Density plot comparison
+# Density comparison of t-distribution and normal distribution
 plot(density(t_data), col = "red", lwd = 2, main = "Density Comparison")
 lines(density(normal_data), col = "blue", lwd = 2)
-legend("topright", legend = c("t-Distribution", "Normal Distribution"), col = c("red", "blue"), lwd = 2)
+legend("topright", legend = c("t-Distribution", "Normal Distribution"), col = c("red", "blue"), lwd = 2)  # Add legend
 
-# Q-Q plot for t-distribution
-qqplot(qt(ppoints(N_sim), df = n-1), t_data, main = "Q-Q Plot", col = "red")
-abline(0, 1, col = "blue", lwd = 2)
+# Q-Q plot: Compare simulated t-distribution to the theoretical t-distribution
+qqplot(qt(ppoints(N_sim), df = n - 1), t_data, main = "Q-Q Plot", col = "red")
+abline(0, 1, col = "blue", lwd = 2)  # Add 45-degree reference line indicating perfect fit
+
 
 
 
 
 # lab Explanation
 
-# n=10: Sample size.
-# N_sim =1000: Number of simulated values.
+# 1. Theoretical Explanation
+# What is the t-distribution?
+# The t-distribution (Student’s t-distribution) is a probability distribution used when estimating the mean of a normally distributed population when the sample size is small.
+# It has heavier tails than the normal distribution, meaning it is more prone to extreme values.
+# The shape of the t-distribution depends on the degrees of freedom (df), which is calculated as df = n - 1, where n is the sample size.
 
-# set.seed(123): Ensures reproducibility.
-# rt(N_sim, df = n-1): Generates 1000 random numbers from a t-distribution with 9 degrees of freedom (n-1=9)
-# rnorm(N_sim): Generates 1000 random numbers from a standard normal distribution (N(0,1))
+# What is the Normal Distribution?
+# The normal distribution (Gaussian distribution) is a bell-shaped curve that is symmetric around the mean.
+# It is used when the sample size is large (Central Limit Theorem states that sample means tend to follow a normal distribution).
+# It has thinner tails compared to the t-distribution.
 
+# Why Compare These Distributions?
+# The t-distribution approaches the normal distribution as sample size increases.
+# This comparison helps to understand when you can use the normal approximation for small sample sizes.
 
-# hist(t_data, probability = TRUE): Plots the density histogram of the t-distribution.
-# curve(dt(x, df = n-1)): Overlays the theoretical t-Distribution
-# hist(t_data, probability = TRUE):
-# Plots a density histogram instead of a frequency histogram.
-# The y-axis represents probability density rather than counts.
-# breaks = 30: Divides the data range into 30 bins.
-# col = "lightblue": Fills bars with light blue color.
-# main = "t-Distribution": Sets title of the plot.
-# xlab = "Value": Labels x-axis.
-# border = "white": Sets bin border color to white
+# 2. Explanation of Each Function
+# (1) set.seed(123)
+# Purpose: Ensures that the random numbers generated remain the same each time the script is run (reproducibility).
+# How it works: The seed value (123) fixes the random number generator.
 
+# (2) n <- 10, N_sim <- 1000
+# n <- 10 → Sets the sample size for the t-distribution.
+# N_sim <- 1000 → Number of random samples (simulations) generated.
 
+# (3) Generating Random Data
+# t_data <- rt(N_sim, df = n - 1)  # t-distribution data
+# normal_data <- rnorm(N_sim)  # Normal distribution data
+# rt(N_sim, df = n - 1)
+# Generates 1000 random samples from a t-distribution with df = 9 (since n - 1 = 10 - 1).
+# rnorm(N_sim)
+# Generates 1000 random samples from a standard normal distribution (mean = 0, SD = 1).
 
-# Plots histogram of normal distribution.
-# dnorm(x): Overlays the theoretical normal curve.
+# (4) Arranging Multiple Plots
+# par(mfrow = c(2, 2))
+# Purpose: Arranges four plots in a 2×2 grid for better visualization.
 
-# density(t_data): Computes the smoothed empirical density of the t-distribution.
-# density(normal_data): Computes the smoothed empirical density of the normal distribution.
-# The legend differentiates between the t-distribution (red) and normal distribution (blue)
+# (5) Histogram of the t-Distribution
+# hist(t_data, probability = TRUE, col = "lightblue", main = "t-Distribution", border = "white")
+# curve(dt(x, df = n - 1), add = TRUE, col = "red", lwd = 2)
+# hist()
+# Plots a histogram of t_data (the t-distribution).
+# probability = TRUE ensures that the area under the histogram sums to 1.
+# col = "lightblue" colors the bars blue.
+# curve(dt(x, df = n - 1), add = TRUE, col = "red", lwd = 2)
+# Overlays the theoretical t-distribution curve in red.
+# dt(x, df = n - 1) calculates the probability density function (PDF) of the t-distribution.
 
-# qt(ppoints(N_sim), df = n-1): Computes theoretical quantiles from the t-distribution.
-# qqplot(): Compares theoretical quantiles to empirical quantiles.
-# abline(0,1): Draws a reference line; if data follows the theoretical distribution, points should align with this line
+# (6) Histogram of the Normal Distribution
+
+# hist(normal_data, probability = TRUE, col = "lightgreen", main = "Normal Distribution", border = "white")
+# curve(dnorm(x), add = TRUE, col = "blue", lwd = 2)
+# Similar to the t-distribution histogram but for normal data.
+# curve(dnorm(x), add = TRUE, col = "blue", lwd = 2)
+# Overlays the theoretical normal distribution curve in blue
+
+# (7) Density Comparison Plot
+# plot(density(t_data), col = "red", lwd = 2, main = "Density Comparison")
+# lines(density(normal_data), col = "blue", lwd = 2)
+# legend("topright", legend = c("t-Distribution", "Normal Distribution"), col = c("red", "blue"), lwd = 2)
+# plot(density(t_data))
+# Plots the kernel density estimate (KDE) for the t-distribution in red.
+# lines(density(normal_data))
+# Adds the density curve for the normal distribution in blue.
+# Legend
+# Adds a legend to distinguish the two distributions.
+
+# (8) Q-Q Plot (Quantile-Quantile Plot)
+# qqplot(qt(ppoints(N_sim), df = n - 1), t_data, main = "Q-Q Plot", col = "red")
+# abline(0, 1, col = "blue", lwd = 2)
+# Purpose: Checks if the simulated t_data follows the expected t-distribution.
+# qt(ppoints(N_sim), df = n - 1)
+# Computes theoretical quantiles of a t-distribution.
+# qqplot()
+# Plots the theoretical t-distribution quantiles against the sample quantiles.
+# abline(0, 1, col = "blue", lwd = 2)
+# Adds a 45-degree reference line to check if the points
