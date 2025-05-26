@@ -1,15 +1,19 @@
-## B.sc-Engg.-in-Information-and-Communication-Engineering All Metarial Available here
 
 
-# Curriculum for B.Sc. in Information and Communication Engineering  
-**Pabna University of Science and Technology**  
-**Department of Information and Communication Engineering**  
-**Location:** Rajapur, Pabna-6600, Bangladesh  
+# 🎓 Curriculum for B.Sc. in Information and Communication Engineering  
+**Pabna University of Science and Technology (PUST)**  
+**Department of Information and Communication Engineering (ICE)**  
+📍 Rajapur, Pabna-6600, Bangladesh  
 
 ---
 
-## Curriculum Overview
-This repository contains the detailed curriculum for the B.Sc. program in Information and Communication Engineering at PUST. The program spans **4 years**, divided into **8 semesters**, with a total of **160+ credits**.
+## 📚 Curriculum Overview
+
+This repository provides the complete and structured curriculum for the **Bachelor of Science (B.Sc.)** program in **Information and Communication Engineering (ICE)** at **PUST**.
+
+The program spans **4 academic years** divided into **8 semesters**, totaling over **160 credits**, covering a wide range of foundational and advanced topics in:
+
+
 
 ---
 
