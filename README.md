@@ -185,7 +185,8 @@ This repository presents a comprehensive and well-organized curriculum for the B
 | 4  | ICE-4223    | Mobile Computing                     | 3.00    |
 | 5  | ICE-4224    | Advanced Robotics                    | 3.00    |  
 
----
+----
+
 
 ## 👤 About Me
 
