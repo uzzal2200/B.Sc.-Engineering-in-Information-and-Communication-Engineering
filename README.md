@@ -187,4 +187,12 @@ This repository presents a comprehensive and well-organized curriculum for the B
 
 ---
 
+## 👤 About Me
+
+**Name:** MD Uzzal Mia  
+🏛️ **Department:** Information and Communication Engineering (ICE)  
+🎓 **Student at:** Pabna University of Science and Technology (PUST)  
+📍 **Location:** Rajapur, Pabna-6600, Bangladesh  
+
+I am currently pursuing my Bachelor of Science (B.Sc.) degree in Information and Communication Engineering at PUST.
 
