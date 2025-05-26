@@ -190,19 +190,4 @@ The program spans **4 academic years** divided into **8 semesters**, totaling ov
 
 ---
 
-## Total Credits and Evaluation  
-- **Core Courses:**  
-  The program consists of core courses focusing on Information and Communication Engineering.  
-- **Viva-voce:**  
-  Viva-voce is conducted in each semester to assess overall knowledge and understanding.  
-- **Thesis and Project Work:**  
-  In the final year, students must complete a thesis and project design.  
-
----
-
-### About  
-This curriculum is for students pursuing a degree in Information and Communication Engineering. Contributions to this repository include syllabus updates, lab manuals, assignments, and related educational content.  
-
-### License  
-This repository is licensed under the <a href="https://github.com/MdRifat-Hossen/B.sc-Engg.-in-Information-and-Communication-Engineering-/blob/main/LICENSE">  MIT </a>License. See the LICENSE file for more information.
 
