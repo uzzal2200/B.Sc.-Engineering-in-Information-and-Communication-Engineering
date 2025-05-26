@@ -9,10 +9,7 @@
 
 ## 📚 Curriculum Overview
 
-This repository provides the complete and structured curriculum for the **Bachelor of Science (B.Sc.)** program in **Information and Communication Engineering (ICE)** at **PUST**.
-
-The program spans **4 academic years** divided into **8 semesters**, totaling over **160 credits**, covering a wide range of foundational and advanced topics in:
-
+This repository presents a comprehensive and well-organized curriculum for the Bachelor of Science (B.Sc.) in Information and Communication Engineering (ICE) at Pabna University of Science and Technology (PUST).Structured over 4 academic years and 8 semesters, the program encompasses 160+ credit hours
 
 
 ---
