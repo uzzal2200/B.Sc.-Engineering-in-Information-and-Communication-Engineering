@@ -1,0 +1,7 @@
+[PROJECTS]
+Count=3
+Project0=..\servo motor\MyProject.mcppi
+Project1=..\servo motor\stepper_motor.mcppi
+Project2=stepper_motor.mcppi
+[ActiveProject]
+Index=2

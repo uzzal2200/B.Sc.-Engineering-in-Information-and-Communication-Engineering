@@ -1,0 +1,135 @@
+<!-- <!-- <h1>What Can JavaScript Do?</h1>
+<p id="demo">JavaScript can change HTML content.</p>
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = 'Hello JavaScript!'">
+Click Me!</button> -->
+
+<!-- JavaScript Can Change HTML Attributes
+This example changes an HTML image, by changing the src attribute of an <img> tag: -->
+<!-- <h1>JavaScript Can Change Images</h1>
+<img id="myImage" onclick="changeImage()" src="pic_bulboff.gif" width="100" height="180">
+<p>Click the light bulb to turn on/off the light.</p>
+<script>
+function changeImage() {
+var image = document.getElementById('myImage');
+if (image.src.match("bulbon")) {
+image.src = "pic_bulboff.gif";
+} else {
+image.src = "pic_bulbon.gif"; }}
+</script> --> -->
+
+
+<!-- JavaScript Can Change HTML Styles (CSS)
+Changing the style of an HTML element, is a variant of changing an HTML attribute:
+Example
+document.getElementById("demo").style.fontSize = "25px"; -->
+
+
+<!-- <h1>What Can JavaScript Do?</h1>
+<p id="demo">JavaScript can change the style of an HTML element.</p>
+<script>
+function myFunction() {
+var x = document.getElementById("demo");
+x.style.fontSize = "25px";
+x.style.color = "red"; }
+</script>
+<button type="button" onclick="myFunction()">Click Me!</button> -->
+
+
+
+<h1>JavaScript Can Validate Input</h1>
+<p>Please input a number between 1 and 10:</p>
+<input id="numb" type="number">
+<button type="button" onclick="myFunction()">Submit</button>
+<p id="demo"></p>
+<script>
+function myFunction() {
+    var x, text;
+    // Get the value of the input field with id="numb"
+    x = document.getElementById("numb").value;
+    // If x is Not a Number or less than one or greater than 10
+    if (isNaN(x) || x < 1 || x > 10) {
+        text = "Input not valid";
+    } else {
+        text = "Input OK";
+    }
+    document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function myFunction() {
+    document.getElementById("demo").innerHTML = "Paragraph changed.";
+}
+</script>
+</head>
+
+<body>
+<h1>My Web Page</h1>
+<p id="demo">A Paragraph</p>
+<button type="button" onclick="myFunction()">Try it</button>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>My Web Page</h1>
+<p id="demo">A Paragraph</p>
+<button type="button" onclick="myFunction()">Try it</button>
+<script>
+function myFunction() {
+document.getElementById("demo").innerHTML = "Paragraph changed.";
+}
+</script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>External JavaScript</h1>
+<p id="demo">A Paragraph.</p>
+<button type="button" onclick="myFunction()">Try it</button>
+<p><strong>Note:</strong> myFunction is stored in an external file called "first.js".</p>
+<script src="first.js"></script>
+</body>
+</html>
+
+<!-- Alert -->
+<!DOCTYPE html>
+<html>
+<body>
+<h1>My First Web Page</h1>
+<p>My first paragraph.</p>
+<script>
+window.alert(5 + 5);
+document.write(5+6);
+</script>
+<button onclick="document.write(5 + 6)"> Try it </button>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>My First Web Page</h1>
+<p>My first paragraph.</p>
+<p id="demo"></p>
+<script>
+// This script calculates 5 + 6 and displays the result in the paragraph with id="demo".
+document.getElementById("demo").innerHTML = 5 + 6;
+</script>
+</body>
+</html>
+

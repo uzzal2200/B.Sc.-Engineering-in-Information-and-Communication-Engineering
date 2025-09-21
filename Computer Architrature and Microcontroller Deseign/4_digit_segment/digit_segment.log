@@ -1,0 +1,18 @@
+0	1	mikroCPIC1618.exe -MSF -DBG -pP16F877A -DL -O11111114 -fo8 -N"G:\All Lab\Computer Architrature and Microcontroller Deseign\4_digit_segment\digit_segment.mcppi" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Defs\" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Uses\P16\" -SP"G:\All Lab\Computer Architrature and Microcontroller Deseign\4_digit_segment\" -IP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Uses\P16\" "digit_segment.c" "__Lib_Math.mcl" "__Lib_MathDouble.mcl" "__Lib_System.mcl" "__Lib_Delays.mcl"	 
+hint: 0	1139	Available RAM: 352 [bytes], Available ROM: 8192 [bytes]	 
+diagnostics: 0	122	Compilation Started	digit_segment.c
+error: 4	435	Parameter 'pin' must not be of bit or sbit type	digit_segment.c
+error: 5	371	Specifier needed	digit_segment.c
+error: 5	396	Invalid declarator expected'(' or identifier	digit_segment.c
+error: 6	300	Syntax Error: ')' expected,  but '==' found	digit_segment.c
+error: 9	371	Specifier needed	digit_segment.c
+error: 9	396	Invalid declarator expected'(' or identifier	digit_segment.c
+error: 9	300	Syntax Error: ')' expected,  but '==' found	digit_segment.c
+error: 12	371	Specifier needed	digit_segment.c
+error: 12	396	Invalid declarator expected'(' or identifier	digit_segment.c
+error: 12	300	Syntax Error: ')' expected,  but '==' found	digit_segment.c
+error: 13	371	Specifier needed	digit_segment.c
+error: 13	396	Invalid declarator expected'(' or identifier	digit_segment.c
+error: 13	300	Syntax Error: ')' expected,  but '==' found	digit_segment.c
+error: 13	312	Internal error ''	digit_segment.c
+error: 0	102	Finished (with errors): 20 Sep 2025, 22:39:03	digit_segment.mcppi

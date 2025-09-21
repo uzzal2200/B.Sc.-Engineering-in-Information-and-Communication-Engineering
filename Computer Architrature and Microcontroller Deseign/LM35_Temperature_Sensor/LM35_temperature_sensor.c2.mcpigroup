@@ -1,0 +1,8 @@
+[PROJECTS]
+Count=4
+Project0=..\Practice\ADC.mcppi
+Project1=..\Practice\DC Motor sppeed control\DcMotorControl.mcppi
+Project2=..\Motor\DcMotorControl_with_push_buttion.mcppi
+Project3=LM35_temperature_sensor.mcppi
+[ActiveProject]
+Index=3

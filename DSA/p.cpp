@@ -7,6 +7,7 @@ int main()
 
         // Taking user input
         cout << "Enter the number of elements: ";
+
         cin >> N;
 
         int S[N];
