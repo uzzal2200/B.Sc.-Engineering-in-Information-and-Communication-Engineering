@@ -168,18 +168,22 @@
         <label for="highschool">High School Attended</label>
         <input type="text" id="highschool" name="highschool" required>
         <br>
+        <label for="CGPA">CGPA</label> <br>
+        <input type="number" id="CGPA" name="CGPA" max="5.00" min="0.00" required > <br>
+
+
         <label for="graduation">Year of Graduation</label>
         <input type="text" id="graduation" name="graduation" required>
         <br>
         <label for="course">Preferred Course of Study</label>
-        <select id="course" name="course" required>
+        <input id="course" name="course" required>
             <option value="computer-science">Computer Science</option>
             <option value="business-administration">Business
 Administration</option>
             <option value="engineering">Engineering</option>
             <option value="arts">Arts</option>
 <option value="medicine">Medicine</option>
-</select>
+</input>
 <input type="submit" value="Submit Application">
 </form>
 </body>
