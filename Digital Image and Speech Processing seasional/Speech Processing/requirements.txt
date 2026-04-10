@@ -1,0 +1,9 @@
+numpy
+matplotlib
+scipy
+librosa
+scikit-learn
+seaborn
+sounddevice
+ipython
+
